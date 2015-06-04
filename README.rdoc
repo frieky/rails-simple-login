@@ -1,28 +1,13 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a very simple REST backend in Rails that verifies username and password against a postgresql backend.
 
-Things you may want to cover:
+If the credentials match JSON is sent back with the user UUID and roles.
 
-* Ruby version
+* Built with Ruby 2.1.2, Rails 4.2.1 and PostgreSQL 9.4.2
 
-* System dependencies
+* Database configuration is in app/config/database.yml
 
-* Configuration
+* To initialize the database:  rake db:setup db:migrate
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* Unit tests require a database superuser account.  Run rake test:run to run the tests - the tests require the server to be running (rails server).
