@@ -1,0 +1,10 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+locationMgr:
+  role_name: Location Manager
+
+programMgr:
+  role_name: Program Manager
+
+admin:
+  role_name: Administrator
